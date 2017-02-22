@@ -1,0 +1,57 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 68px;
+	line-height: 30px;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+	font-weight: 700;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+a {
+	outline: none;
+	@include transition-property(all);
+	@include transition-duration(0.2s);
+	@include transition-timing-function(ease-in-out);
+}
+
+strong {
+	font-weight: 700;
+}
+
+
+/* Layout
+------------------------------------*/
+
+.container {
+	position: relative;
+}
+
+.section-wrapper {
+	position: relative;
+	padding: 60px 0;
+}
+
+.row {
+	width: 1400px;
+}
+
+
+
+/* Misc.
+------------------------------------*/
+
+.wow {
+  visibility: hidden;
+}
+
