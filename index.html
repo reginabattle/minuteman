@@ -26,14 +26,17 @@
 
 <body>
 
-
-  <main id="fullpage">
+  <main id="fullpage" class="wow fadeIn">
 
     <!-- Intro -->
-    <section class="intro section-wrapper">
+    <section class="hero section-wrapper">
       <div class="row">
 
-        <div class="section-content six columns centered">
+        <header class="site-logo twelve columns">
+          <a href="index.html"><img src="images/layout/logo.svg" alt="Minuteman VSC logo" /></a>
+        </header>
+
+        <div class="hero-content seven columns offset-by-three">
           <h1>Don't let a vehicle breakdown cost you a fortune.</h1>
           <p>Let <strong>Minuteman VSC</strong> help get you protected in minutes.</p>
         </div>
@@ -44,14 +47,14 @@
     <!-- end -->
 
     <!-- What We Do -->
-    <section class="section-wrapper">
+    <section class="about section-wrapper">
       <div class="row">
 
-        <header class="section-header ten columns centered">
+        <header class="section-header nine columns offset-by-three">
           <h1>What we do</h1>
         </header>
 
-        <div class="section-content six columns centered">
+        <div class="section-content five columns offset-by-four">
           <p>We all know that auto insurance protects us if our vehicle suffers costly damage, but did you know that a vehicle service contract can protect us if our vehicle suffers a costly breakdown?  Minuteman VSC offers vehicle service contracts (VSCs) from top-rated providers at a fraction of the price charged at a car dealership.  We also offer you reputable payment plan providers that can allow you to purchase your VSC at 0% interest with no credit check.</p>
 
           <p>To learn more about the VSC and payment plan providers we offer, please visit the Our Partners page.</p>
@@ -62,14 +65,14 @@
     <!-- end -->
 
     <!-- Contact Us -->
-    <section class="section-wrapper">
+    <section class="contact section-wrapper">
       <div class="row">
         
-        <header class="section-header ten columns centered">
+        <header class="section-header nine columns offset-by-three">
           <h1>Contact us</h1>
         </header>
 
-        <div class="section-content six columns centered">
+        <div class="section-content five columns offset-by-four">
           <p>Minuteman VSC is not the administrator or payment plan provider for the VSC you purchase and has no obligation with regards to your VSC.  If you hav e already used our service to purchase a VSC, you should have received your signed contracts via email that name your administrator and your payment plan provider.</p>
 
           <p>If you have a question or claim concerning your vehicle service contract or payment plan contract, we encourage you to contact the respective provider directly.  
@@ -82,26 +85,45 @@
     <!-- end -->
 
     <!-- Our Partners -->
-    <section class="section-wrapper">
+    <section class="partners section-wrapper">
       <div class="row">
       
-      <header class="section-header ten columns centered">
-        <h1>Our partners</h1>
-      </header>
+        <header class="section-header text-center ten columns centered">
+          <h1>Our partners</h1>
+        </header>
+
+        <div class="section-content six columns centered">
+          <ul class="partners-list block-grid two-up">
+            <li>
+              <h2>Vehicle Service Providers</h2>
+              <a href="http://www.primeautocare.com/" target="_blank"><img src="images/partners/prime.svg" alt="Prime Autocare logo" /></a>
+            </li>
+            
+            <li>
+              <h2>Payment Plan Providers</h2>
+              <a href="http://www.budcofinancial.com/" target="_blank"><img src="images/partners/budco.svg" alt="Budco Financial logo" /></a>
+            </li>
+
+            <li class="last">
+              <h2>Where You Can Buy a Vehicle Service Contract</h2>
+              <a href="https://www.thegeneral.com/" target="_blank"><img src="images/partners/general.svg" alt="The General Insurance logo" /></a>
+            </li>
+          </ul>
+        </div>
 
       </div>
     </section>
     <!-- end -->
 
     <!-- Terms Of Use -->
-    <section class="section-wrapper">
+    <section class="terms section-wrapper">
       <div class="row">
       
-        <header class="section-header ten columns centered">
+        <header class="section-header nine columns offset-by-three">
           <h1>Terms of use</h1>
         </header>
 
-        <div class="section-content six columns centered">
+        <div class="section-content five columns offset-by-four">
           <p>Sea Pine Technologies LLC, including its successors and assigns, operating under the trade names “Service Lane VSC” and “Minuteman VSC” (hereinafter referred to as “we,” “our” and “us”), offersconsumers (hereinafter referred to as “you” and “your”) the ability, through your use of our technology platform, to receive free quotes for vehicle service contracts (“VSC” or “VSCs”) and purchase VSCs online.</p>
 
           <p><strong>IMPORTANT:</strong> We are not a party to any contract with you. This platform is intended solely for the purpose of providing quotes from VSC providers and allowing you to purchase the VSC you choose. All VSCs offered for sale through this site are underwritten by reputable third party VSC providers. The VSC provider you choose will be very apparent to you before you finalize the transaction and make your payment.</p>
@@ -115,21 +137,35 @@
 
   </main>
 
+  <footer class="footer-wrapper">
+    <div class="footer-content row">
+      
+      <div class="footer-logo six columns">
+        <a href="index.html"><img src="images/layout/logo-white.svg" alt="Minuteman VSC logo" /></a>
+      </div>
+
+      <div class="contact-info six columns">
+        <p><a href="tel:866-318-0000">866-318-0000</a> <br />
+        <a href="mailto:help@minutemanvsc.com">help@minutemanvsc.com</a></p>
+      </div>
+
+    </div>
+  </footer>
+
 
 
 	<!-- Scripts -->
 	<script type="text/javascript" src="js/scripts.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
+
+      new WOW().init();
+
       $('#fullpage').fullpage({
-        menu: '#menu',
         navigation: true,
         navigationPosition: 'left',
         navigationTooltips: ['Intro', 'What We Do', 'Contact Us', 'Our Partners', 'Terms Of Use'],
-        showActiveTooltip: false,
-        slidesNavigation: false,
-        slidesNavPosition: 'bottom',
-        scrollingSpeed: 700,
+        scrollingSpeed: 1200,
         autoScrolling: false,
         fitToSection: false,
         scrollBar: true,
