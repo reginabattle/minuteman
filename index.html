@@ -17,6 +17,7 @@
   <script src="https://use.typekit.net/rpa2gqw.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
   <script src="https://use.fontawesome.com/1836dcd1d9.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
   <!-- Title -->
 	<title>Minuteman VSC</title>
@@ -25,14 +26,93 @@
 
 <body>
 
-  
 
+  <main id="fullpage">
+
+    <!-- Intro -->
+    <section class="intro-content section-wrapper">
+      
+
+    </section>
+
+    <!-- What We Do -->
+    <section class="section-wrapper">
+      <div class="row">
+
+        <header class="section-header ten columns centered">
+          <h1>What we do</h1>
+        </header>
+
+
+      </div>
+    </section>
+    <!-- end -->
+
+    <!-- Contact Us -->
+    <section class="section-wrapper">
+      <div class="row">
+        
+        <header class="section-header">
+          <h1>Contact us</h1>
+        </header>
+      
+      </div>
+    </section>
+    <!-- end -->
+
+    <!-- Our Partners -->
+    <section class="section-wrapper">
+      <div class="row">
+      
+      <header class="section-header">
+        <h1>Our partners</h1>
+      </header>
+
+      </div>
+    </section>
+    <!-- end -->
+
+    <!-- Terms Of Use -->
+    <section class="section-wrapper">
+      <div class="row">
+      
+      <header class="section-header">
+        <h1>Terms of use</h1>
+      </header>
+
+      </div>
+    </section>
+    <!-- end -->
+
+  </main>
 
 
 
 	<!-- Scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script type="text/javascript" src="js/scripts.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        menu: '#menu',
+        navigation: true,
+        navigationPosition: 'left',
+        navigationTooltips: ['Intro', 'What We Do', 'Contact Us', 'Our Partners', 'Terms Of Use'],
+        showActiveTooltip: false,
+        slidesNavigation: false,
+        slidesNavPosition: 'bottom',
+        scrollingSpeed: 700,
+        autoScrolling: false,
+        fitToSection: false,
+        scrollBar: true,
+        fadingEffect: true,
+        paddingTop: '8%',
+        paddingBottom: '10px',
+        sectionSelector: '.section-wrapper',
+        lazyLoading: true,
+      });
+    });
+  </script>
 
 </body>
 </html>
+

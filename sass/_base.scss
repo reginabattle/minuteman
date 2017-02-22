@@ -5,17 +5,32 @@ body, html {
 }
 
 body {
-	font-size: 68px;
+	background: $grey-dark;
+	color: $white;
+	font-family: $body-font;
+	font-size: 20px;
 	line-height: 30px;
 	font-weight: 400;
 }
 
 h1, h2, h3, h4 {
+	color: $red;
+	font-family: $header-font;
 	font-weight: 700;
+	text-transform: uppercase;
 }
 
-p {
-	margin-bottom: 20px;
+h1 {
+	font-size: 50px;
+	line-height: 60px;
+	display: inline-block;
+	padding-bottom: 10px;
+	border-bottom: 6px solid $red;
+}
+
+h2 {
+	font-size: 43px;
+	line-height: 53px;
 }
 
 a {
@@ -46,6 +61,23 @@ strong {
 	width: 1400px;
 }
 
+
+/* Content
+------------------------------------*/
+
+.section-header {
+	text-align: center;
+}
+
+
+/* Intro
+------------------------------------*/
+
+.intro-content {
+	background-image: url('../images/photos/road.jpg');
+	background-repeat: none;
+	background-size: cover;
+}
 
 
 /* Misc.
