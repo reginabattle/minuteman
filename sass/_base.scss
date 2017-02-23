@@ -115,7 +115,7 @@ figure {
 }
 
 .hero-content {
-	padding-top: 35px;
+	padding-top: 65px;
 	z-index: 10;
 
 	h1 {
@@ -255,10 +255,24 @@ figure {
 /* Misc.
 ------------------------------------*/
 
+#fp-nav ul li {
+	@include transition-property(opacity);
+	@include transition-duration(0.2s);
+	@include transition-timing-function(ease-in-out);
+}
+
+#fp-nav ul li:first-child,
+#fp-nav ul li.hide {
+	opacity: 0;
+}
+
+#fp-nav ul li.show:first-child {
+	opacity: 1;
+}
+
 .wow {
   visibility: hidden;
 }
-
 
 .overlay {
 	background: rgba($grey-dark, 0.65);
