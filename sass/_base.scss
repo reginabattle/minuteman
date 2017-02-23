@@ -79,9 +79,12 @@ strong {
 /* Content
 ------------------------------------*/
 
+.container {
+	padding-bottom: 60px;
+}
+
 .section-header {
 	padding-top: 10%;
-
 }
 
 .section-content {
@@ -109,9 +112,17 @@ figure {
 
 .hero {
 	background-image: url('../images/photos/road.jpg');
-	background-repeat: none;
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+
+	&.fp-auto-height.fp-section {
+		height: 100% !important;
+	}
+
+	&.fp-auto-height.fp-section .fp-tableCell {
+		height: auto;
+	}
 }
 
 .hero-content {
@@ -210,7 +221,7 @@ figure {
 .footer-wrapper {
 	background: $black;
 	color: $white;
-	padding: 8% 0 10%;
+	padding: 8% 0;
 }
 
 .col-left img {

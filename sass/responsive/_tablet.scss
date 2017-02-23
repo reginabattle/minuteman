@@ -2,8 +2,11 @@
 /* Smaller Desktops
 ------------------------------------*/
 
-@media only screen and (max-width:1024px) {
-
+@media only screen and (max-width:1485px) {
+	
+	#fp-nav.left {
+		left: 5%;
+	}
 
 }
 
@@ -13,6 +16,110 @@
 
 @media only screen and (max-width:767px) {
 
+	h1 {
+		font-size: 30px;
+    line-height: 40px;
+	}
 
+	#fp-nav {
+		display: none;
+	}
+
+
+
+	/* Header
+	-------------------------------------*/
+
+	.site-logo {
+		padding: 30px 15px;
+		text-align: center;
+
+		img {
+			max-width: 200px;
+		}
+	}
+
+
+	/* Content
+	-------------------------------------*/
+
+	.section-header {
+		padding: 60px 35px 0;
+	}
+
+	.section-content {
+		padding: 30px 65px 30px 35px;
+		margin-left: 10% !important;
+	}
+
+	figure.columns {
+		padding: 0 35px;
+		margin: 30px 0;
+	}
+	
+	
+	/* Hero
+	-------------------------------------*/
+
+	.hero {
+		height: auto !important;
+
+		.fp-tableCell {
+			height: auto !important;
+		}
+	}
+
+	.hero-content {
+		padding: 30px 45px 120px;
+
+		h1 {
+			font-size: 28px;
+    	line-height: 38px;
+		}
+	}
+
+
+	/* Contact Us
+	-------------------------------------*/
+
+	.contact-info {
+
+		li {
+			margin-bottom: 20px;
+			min-height: 15px;
+
+			&:first-child {
+				margin-bottom: 40px;
+			}
+
+			&:before {
+				left: -70px;
+			}
+		}
+	}
+
+
+
+	/* Our Partners
+	-------------------------------------*/
+	
+	.partners .text-center {
+		text-align: left;
+	}
+
+	
+	/* Footer
+	-------------------------------------*/
+
+	.col-left img {
+	  max-width: 120px;
+	}
+
+	.col-right {
+		font-size: 14px;
+		margin-top: 20px;
+	}
 
 }
+
+
