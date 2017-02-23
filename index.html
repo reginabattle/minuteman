@@ -29,7 +29,7 @@
   <main id="fullpage" class="container wow fadeIn">
 
     <!-- Intro -->
-    <section class="hero section-wrapper">
+    <section class="hero section-wrapper wow fadeIn" data-wow-duration="0.4s">
       <div class="row">
 
         <header class="site-logo twelve columns">
@@ -50,17 +50,15 @@
     <section class="about section-wrapper">
       <div class="row">
 
-        <header class="section-header nine columns offset-by-three">
+        <header class="section-header nine columns offset-by-three wow fadeIn" data-wow-delay="0.4s" data-wow-duration="0.8s">
           <h1>What we do</h1>
         </header>
 
-        <div class="section-content five columns offset-by-four">
+        <div class="section-content five columns offset-by-four wow fadeIn" data-wow-delay="0.3s" data-wow-duration="0.8s">
           <p>We all know that auto insurance protects us if our vehicle suffers costly damage, but did you know that a vehicle service contract can protect us if our vehicle suffers a costly breakdown?  Minuteman VSC offers vehicle service contracts (VSCs) from top-rated providers at a fraction of the price charged at a car dealership.  We also offer you reputable payment plan providers that can allow you to purchase your VSC at 0% interest with no credit check.</p>
-
-          <p>To learn more about the VSC and payment plan providers we offer, please visit the Our Partners page.</p>
         </div>
 
-        <figure class="nine columns offset-by-three">
+        <figure class="nine columns offset-by-three wow fadeInUp" data-wow-duration="1.2s">
           <img src="images/photos/women.jpg" alt="Women in car" />
         </figure>
 
@@ -72,11 +70,11 @@
     <section class="contact section-wrapper">
       <div class="row">
         
-        <header class="section-header nine columns offset-by-three">
+        <header class="section-header nine columns offset-by-three wow fadeIn" data-wow-delay="0.4s" data-wow-duration="0.8s">
           <h1>Contact us</h1>
         </header>
 
-        <div class="section-content five columns offset-by-four">
+        <div class="section-content five columns offset-by-four wow fadeIn" data-wow-delay="0.3s" data-wow-duration="0.8s">
           <p>Minuteman VSC is not the administrator or payment plan provider for the VSC you purchase and has no obligation with regards to your VSC.  If you hav e already used our service to purchase a VSC, you should have received your signed contracts via email that name your administrator and your payment plan provider.</p>
 
           <p>If you have a question or claim concerning your vehicle service contract or payment plan contract, we encourage you to contact the respective provider directly.  
@@ -98,30 +96,30 @@
     <section class="partners section-wrapper">
       <div class="row">
       
-        <header class="section-header text-center ten columns centered">
+        <header class="section-header text-center ten columns centered wow fadeIn" data-wow-delay="0.4s" data-wow-duration="0.8s">
           <h1>Our partners</h1>
         </header>
 
         <div class="section-content six columns centered">
           <ul class="partners-list block-grid two-up">
-            <li>
+            <li class="wow fadeIn" data-wow-delay="0.2s" data-wow-duration="0.4s">
               <h2>Vehicle Service Providers</h2>
               <a href="http://www.primeautocare.com/" target="_blank"><img src="images/partners/prime.svg" alt="Prime Autocare logo" /></a>
             </li>
             
-            <li>
+            <li class="wow fadeIn" data-wow-delay="0.4s" data-wow-duration="0.6s">
               <h2>Payment Plan Providers</h2>
               <a href="http://www.budcofinancial.com/" target="_blank"><img src="images/partners/budco.svg" alt="Budco Financial logo" /></a>
             </li>
 
-            <li class="last">
+            <li class="last wow fadeIn" data-wow-delay="0.6s" data-wow-duration="0.8s">
               <h2>Where You Can Buy a Vehicle Service Contract</h2>
               <a href="https://www.thegeneral.com/" target="_blank"><img src="images/partners/general.svg" alt="The General Insurance logo" /></a>
             </li>
           </ul>
         </div>
 
-        <figure class="nine columns offset-by-three">
+        <figure class="nine columns offset-by-three wow fadeInUp" data-wow-duration="1.2s">
           <img src="images/photos/puppy.png" alt="Girl and dog sitting in car" />
         </figure>
 
@@ -133,11 +131,11 @@
     <section class="terms section-wrapper">
       <div class="row">
       
-        <header class="section-header nine columns offset-by-three">
+        <header class="section-header nine columns offset-by-three wow fadeIn" data-wow-delay="0.4s" data-wow-duration="0.8s">
           <h1>Terms of use</h1>
         </header>
 
-        <div class="section-content five columns offset-by-four">
+        <div class="section-content five columns offset-by-four wow fadeIn" data-wow-delay="0.3s" data-wow-duration="0.8s">
           <p>Sea Pine Technologies LLC, including its successors and assigns, operating under the trade names “Service Lane VSC” and “Minuteman VSC” (hereinafter referred to as “we,” “our” and “us”), offersconsumers (hereinafter referred to as “you” and “your”) the ability, through your use of our technology platform, to receive free quotes for vehicle service contracts (“VSC” or “VSCs”) and purchase VSCs online.</p>
 
           <p><strong>IMPORTANT:</strong> We are not a party to any contract with you. This platform is intended solely for the purpose of providing quotes from VSC providers and allowing you to purchase the VSC you choose. All VSCs offered for sale through this site are underwritten by reputable third party VSC providers. The VSC provider you choose will be very apparent to you before you finalize the transaction and make your payment.</p>
@@ -178,12 +176,11 @@
       $('#fullpage').fullpage({
         navigation: true,
         navigationPosition: 'left',
-        navigationTooltips: ['Intro', 'What We Do', 'Contact Us', 'Our Partners', 'Terms Of Use'],
+        navigationTooltips: ['Back to top', 'What We Do', 'Contact Us', 'Our Partners', 'Terms Of Use'],
         scrollingSpeed: 1200,
         autoScrolling: false,
         fitToSection: false,
         scrollBar: true,
-        fadingEffect: true,
         paddingTop: '0',
         paddingBottom: '10px',
         sectionSelector: '.section-wrapper',

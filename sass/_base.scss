@@ -99,6 +99,7 @@ figure {
 	img {
 		display: inline-block;
 		max-width: 700px;
+		width: 100%;
 	}
 }
 
@@ -260,7 +261,7 @@ figure {
 
 
 .overlay {
-	background: rgba($grey-dark, 0.75);
+	background: rgba($grey-dark, 0.65);
 	position: absolute;
 	top: 0;
 	width: 100%;
