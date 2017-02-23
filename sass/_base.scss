@@ -37,6 +37,7 @@ h2 {
 }
 
 a {
+	color: $white;
 	outline: none;
 	@include transition-property(all);
 	@include transition-duration(0.2s);
@@ -61,7 +62,6 @@ strong {
 }
 
 
-
 /* Header
 ------------------------------------*/
 
@@ -73,35 +73,6 @@ strong {
 	img {
 		max-width: 300px;
 	}
-}
-
-/* Hero
-------------------------------------*/
-
-.hero {
-	background-image: url('../images/photos/road.jpg');
-	background-repeat: none;
-	background-size: cover;
-}
-
-.hero-content {
-	padding-top: 8%;
-	z-index: 10;
-
-	h1 {
-		color: $white;
-		font-size: 43px;
-		line-height: 55px;
-		border-bottom: none;
-	}
-}
-
-.overlay {
-	background: rgba($grey-dark, 0.75);
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100%;
 }
 
 
@@ -120,28 +91,87 @@ strong {
 	p {
 		margin-bottom: 20px;
 	}
+}
 
-	a { 
-		color: $white;
-	}
+figure {
+	margin: 60px 0;
 
-	.button {
-		font-size: 14px;
-		font-weight: 700;
+	img {
 		display: inline-block;
-		margin-top: 40px;
-		padding: 15px 35px;
-		border: 6px solid $white;
-
-		&:hover {
-			background: $white;
-			color: $grey-dark;
-		}
+		max-width: 700px;
 	}
 }
 
 
-/* Partners
+/* Hero
+------------------------------------*/
+
+.hero {
+	background-image: url('../images/photos/road.jpg');
+	background-repeat: none;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.hero-content {
+	padding-top: 35px;
+	z-index: 10;
+
+	h1 {
+		color: $white;
+		font-size: 33px;
+		line-height: 45px;
+		border-bottom: none;
+	}
+}
+
+
+/* Contact Us
+------------------------------------*/
+
+.contact-info {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 700;
+	margin-top: 60px;
+	text-transform: uppercase;
+
+	li {
+		min-height: 50px;
+		margin-bottom: 40px;
+		position: relative;
+
+		&:before {
+			display:block;
+			width: 100%;
+			left: -115px;
+			position: absolute;
+		}
+	}
+
+	a:hover {
+		border-bottom: 1px solid $white;
+	}
+}
+
+.contact-address:before {
+	content: url('../images/layout/icon-email.svg');
+	top: 25px;
+	max-width: 40px;
+}
+
+.contact-phone:before {
+	content: url('../images/layout/icon-phone.svg');
+	max-width: 28px;
+}
+
+.contact-email:before {
+	content: url('../images/layout/icon-arrow.svg');
+	max-width: 30px;
+}
+
+
+/* Our Partners
 ------------------------------------*/
 
 .partners-list {
@@ -150,22 +180,23 @@ strong {
 	h2 {
 		color: $white;
 		font-family: $body-font;
-		font-size: 18px;
-		line-height: 24px;
+		font-size: 16px;
+		line-height: 22px;
 		text-transform: none;
-		margin-bottom: 30px;
+		margin-bottom: 40px;
 	}
 
 	li {
-		margin-bottom: 30px;
+		margin-bottom: 80px;
 
 		&.last {
 			width: 100%;
+			margin-bottom: 0;
 		}
 	}
 
 	img {
-		max-width: 180px;
+		max-width: 160px;
 		display: inline-block;
 		vertical-align: middle;
 	}
@@ -181,14 +212,11 @@ strong {
 	padding: 8% 0 10%;
 }
 
-.footer-logo {
-
-	img {
-		max-width: 200px;
-	}	
+.col-left img {
+	max-width: 200px;
 }
 
-.contact-info {
+.col-right {
 	font-size: 16px;
 	font-weight: 700;
 	text-align: right;
@@ -199,8 +227,26 @@ strong {
 		color: $white;
 
 		&:hover {
-			text-decoration: underline;
+			border-bottom: 1px solid $white;
 		}
+	}
+}
+
+
+/* Buttons
+------------------------------------*/
+
+.button {
+	font-size: 14px;
+	font-weight: 700;
+	display: inline-block;
+	margin-top: 40px;
+	padding: 15px 35px;
+	border: 6px solid $white;
+
+	&:hover {
+		background: $white;
+		color: $grey-dark;
 	}
 }
 
@@ -210,4 +256,13 @@ strong {
 
 .wow {
   visibility: hidden;
+}
+
+
+.overlay {
+	background: rgba($grey-dark, 0.75);
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
 }

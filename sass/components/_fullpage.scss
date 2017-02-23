@@ -129,7 +129,7 @@ html.fp-enabled, .fp-enabled body {
 	position: fixed;
 	z-index: 100;
 	margin-top: -32px;
-	top: 48%;
+	top: 40%;
 	opacity: 1;
 	-webkit-transform: translate3d(0, 0, 0);
 }
@@ -191,7 +191,7 @@ html.fp-enabled, .fp-enabled body {
 	font-size: 14px;
 	font-weight: 700;
 	position: absolute;
-	top: -2px;
+	top: -1px;
 	opacity: 0.5;
 	width: auto;
 	max-width: 220px;
@@ -200,8 +200,11 @@ html.fp-enabled, .fp-enabled body {
 	text-transform: uppercase;
 }
 
-#fp-nav ul li:hover .fp-tooltip, 
-#fp-nav.fp-show-active a.active+.fp-tooltip {
+#fp-nav ul li a.active+.fp-tooltip {
+	opacity: 1;
+}
+
+#fp-nav ul li:hover .fp-tooltip {
 	width: auto;
 	opacity: 1;
 	@include transition-property(opacity);
