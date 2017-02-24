@@ -25,7 +25,7 @@
 @media only screen and (max-width:1280px) {
 	
 	.hero-content h1 {
-		font-size: 31px;
+		font-size: 30px;
 	}
 
 	figure img {
@@ -39,7 +39,15 @@
 }
 
 @media only screen and (max-width:1024px) {
+
+	h1 {
+		font-size: 40px;
+    letter-spacing: 6px;
+	}
 	
+
+	/* Logo */
+
 	.site-logo {
 		padding-top: 30px;
 
@@ -47,7 +55,24 @@
 			max-width: 180px;
 		}
 	}
+
+
+	/* Content */
+
+	.section-content {
+		padding-top: 30px;
+	}
+
+	figure img {
+		max-width: 580px;
+	}
 	
+
+	/* Nav */
+
+	#fp-nav.left {
+    left: 0;
+	}
 }
 
 
@@ -61,21 +86,22 @@
     line-height: 40px;
 	}
 
+
+	/* Nav */
+
 	#fp-nav {
 		display: none;
 	}
 
 
-	/* Header
-	-------------------------------------*/
+	/* Logo */
 
 	.site-logo {
 		text-align: center;
 	}
 
 
-	/* Content
-	-------------------------------------*/
+	/* Content */
 
 	.section-header {
 		padding: 60px 25px 0;
@@ -92,8 +118,7 @@
 	}
 	
 	
-	/* Hero
-	-------------------------------------*/
+	/* Hero */
 
 	.hero {
 		height: auto !important;
@@ -113,8 +138,7 @@
 	}
 
 
-	/* Contact Us
-	-------------------------------------*/
+	/* Contact */
 
 	.contact-info {
 
@@ -132,9 +156,8 @@
 		}
 	}
 
-	
-	/* Footer
-	-------------------------------------*/
+
+	/* Footer */
 
 	.col-left {
 		text-align: center;
