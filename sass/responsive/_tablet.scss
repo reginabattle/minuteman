@@ -111,13 +111,18 @@
 	/* Footer
 	-------------------------------------*/
 
-	.col-left img {
-	  max-width: 120px;
+	.col-left {
+		text-align: center;
+
+		img {
+		  max-width: 120px;
+		}
 	}
 
 	.col-right {
 		font-size: 14px;
 		margin-top: 20px;
+		text-align: center;
 	}
 
 }
