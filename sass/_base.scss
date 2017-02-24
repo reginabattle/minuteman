@@ -149,14 +149,15 @@ figure {
 	text-transform: uppercase;
 
 	li {
-		min-height: 50px;
+		min-height: 40px;
 		margin-bottom: 40px;
 		position: relative;
 
 		&:before {
 			display:block;
 			width: 100%;
-			left: -115px;
+			left: -100px;
+			opacity: 0.5;
 			position: absolute;
 		}
 	}
@@ -168,13 +169,13 @@ figure {
 
 .contact-address:before {
 	content: url('../images/layout/icon-email.svg');
-	top: 25px;
+	top: 20px;
 	max-width: 40px;
 }
 
 .contact-phone:before {
 	content: url('../images/layout/icon-phone.svg');
-	max-width: 28px;
+	max-width: 26px;
 }
 
 .contact-email:before {
@@ -254,6 +255,9 @@ figure {
 	display: inline-block;
 	margin-top: 40px;
 	padding: 15px 35px;
+	text-align: center;
+	width: 100%;
+	max-width: 200px;
 	border: 6px solid $white;
 
 	&:hover {
