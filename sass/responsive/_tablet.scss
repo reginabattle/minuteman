@@ -14,6 +14,10 @@
 	
 	.site-logo {
 		padding: 60px 25px 15px;
+
+		img {
+			max-width: 220px;
+		}
 	}
 
 }
@@ -26,6 +30,10 @@
 
 	figure img {
 		max-width: 650px;
+	}
+
+	.footer-wrapper {
+		padding: 6% 0;
 	}
 
 }
