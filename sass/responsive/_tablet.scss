@@ -7,6 +7,11 @@
 	#fp-nav.left {
 		left: 5%;
 	}
+}
+
+
+@media only screen and (max-width:1024px) {
+	
 
 }
 
@@ -26,7 +31,6 @@
 	}
 
 
-
 	/* Header
 	-------------------------------------*/
 
@@ -35,7 +39,7 @@
 		text-align: center;
 
 		img {
-			max-width: 200px;
+			max-width: 180px;
 		}
 	}
 
@@ -98,15 +102,6 @@
 		}
 	}
 
-
-
-	/* Our Partners
-	-------------------------------------*/
-	
-	.partners .text-center {
-		text-align: left;
-	}
-
 	
 	/* Footer
 	-------------------------------------*/
@@ -124,7 +119,5 @@
 		margin-top: 20px;
 		text-align: center;
 	}
-
 }
-
 
