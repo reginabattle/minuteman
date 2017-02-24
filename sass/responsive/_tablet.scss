@@ -10,9 +10,36 @@
 }
 
 
+@media only screen and (max-width:1366px) {
+	
+	.site-logo {
+		padding: 60px 25px 15px;
+	}
+
+}
+
+@media only screen and (max-width:1280px) {
+	
+	.hero-content h1 {
+		font-size: 31px;
+	}
+
+	figure img {
+		max-width: 650px;
+	}
+
+}
+
 @media only screen and (max-width:1024px) {
 	
+	.site-logo {
+		padding-top: 30px;
 
+		img {
+			max-width: 180px;
+		}
+	}
+	
 }
 
 
@@ -35,12 +62,7 @@
 	-------------------------------------*/
 
 	.site-logo {
-		padding: 30px 15px;
 		text-align: center;
-
-		img {
-			max-width: 180px;
-		}
 	}
 
 
