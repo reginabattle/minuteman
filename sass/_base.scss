@@ -202,6 +202,11 @@ figure {
 	li {
 		margin-bottom: 80px;
 
+		&:first-child img {
+			max-width: 280px;
+			margin-top: 15px;
+		}
+
 		&.last {
 			width: 100%;
 			margin-bottom: 0;
